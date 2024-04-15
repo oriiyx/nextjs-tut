@@ -59,7 +59,12 @@ export default function Pagination({totalPages}: { totalPages: number }) {
     );
 }
 
-function PaginationNumber({page, href, isActive, position}: {
+function PaginationNumber({
+                              page,
+                              href,
+                              isActive,
+                              position,
+                          }: {
     page: number | string;
     href: string;
     position?: 'first' | 'last' | 'middle' | 'single';
@@ -85,7 +90,11 @@ function PaginationNumber({page, href, isActive, position}: {
     );
 }
 
-function PaginationArrow({href, direction, isDisabled}: {
+function PaginationArrow({
+                             href,
+                             direction,
+                             isDisabled,
+                         }: {
     href: string;
     direction: 'left' | 'right';
     isDisabled?: boolean;
